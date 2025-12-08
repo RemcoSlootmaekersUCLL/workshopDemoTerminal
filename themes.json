@@ -158,5 +158,25 @@
       "blue": "#06B6EF",
       "red": "#EF6155"
     }
+  },
+  "Greenscreen": {
+    "light": {
+      "background": "#001100",
+      "foreground": "#00BB00",
+      "yellow": "#007700",
+      "green": "#00BB00",
+      "gray": "#007700",
+      "blue": "#009900",
+      "red": "#007700"
+    },
+    "dark": {
+      "background": "#001100",
+      "foreground": "#00BB00",
+      "yellow": "#007700",
+      "green": "#00BB00",
+      "gray": "#007700",
+      "blue": "#009900",
+      "red": "#007700"
+    }
   }
 }
