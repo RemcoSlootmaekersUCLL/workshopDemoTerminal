@@ -1,21 +1,9 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "Murder Mystery",
-  "name": "John Doe",
-  "ascii": "Murder Mystery",
-  "social": {
-    "github": "github",
-    "linkedin": "linkedin"
-  },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
+  "title": "Lost Server",
+  "name": "Administrator Name",
+  "ascii": "Lost Server",
+  "ps1_hostname": "lostServer",
+  "ps1_username": "user",
   "colors": {
     "light": {
       "background": "#001100",
