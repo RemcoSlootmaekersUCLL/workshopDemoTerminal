@@ -1,9 +1,9 @@
 {
-  "title": "Lost Server",
-  "name": "Administrator Name",
-  "ascii": "Lost Server",
-  "ps1_hostname": "lostServer",
-  "ps1_username": "user",
+  "title": "G-Rout",
+  "name": "Robert Grant",
+  "ascii": "G-Rout1",
+  "ps1_hostname": "grout",
+  "ps1_username": "grant",
   "colors": {
     "light": {
       "background": "#001100",

@@ -27,7 +27,7 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
+  return `${config.name}`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
@@ -40,7 +40,11 @@ sbin
 };
 
 export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
+  return new Date().toLocaleString('en-US', {
+    timeZone: 'America/Chicago',
+    dateStyle: 'full',
+    timeStyle: 'long',
+  });
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
