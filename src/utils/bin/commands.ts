@@ -21,38 +21,30 @@ export const help = async (args: string[]): Promise<string> => {
 `;
 };
 
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
+  return `${config.name}`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `hints
-bestanden
-beschrijving
+  return `configInit.sh
+config
+data
+bin
+sbin
   `;
 };
 
-export const cd = async (args: string[]): Promise<string> => {
-  return ``;
-};
-
 export const date = async (args: string[]): Promise<string> => {
-  return new Date().toString();
-};
-
-export const vim = async (args: string[]): Promise<string> => {
-  return `in construction`;
+  return new Date().toLocaleString('en-US', {
+    timeZone: 'America/Chicago',
+    dateStyle: 'full',
+    timeStyle: 'long',
+  });
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
@@ -63,12 +55,12 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-██╗      ██████╗ ███████╗████████╗    ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ 
-██║     ██╔═══██╗██╔════╝╚══██╔══╝    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
-██║     ██║   ██║███████╗   ██║       ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝
-██║     ██║   ██║╚════██║   ██║       ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗
-███████╗╚██████╔╝███████║   ██║       ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║
-╚══════╝ ╚═════╝ ╚══════╝   ╚═╝       ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
+ ██████╗       ██████╗  ██████╗ ██╗   ██╗████████╗
+██╔════╝       ██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝
+██║  ███╗█████╗██████╔╝██║   ██║██║   ██║   ██║   
+██║   ██║╚════╝██╔══██╗██║   ██║██║   ██║   ██║   
+╚██████╔╝      ██║  ██║╚██████╔╝╚██████╔╝   ██║   
+ ╚═════╝       ╚═╝  ╚═╝ ╚═════╝  ╚═════╝    ╚═╝   
 
 Type 'help' om de lijst van beschikbare commando's te zien.
 `;
