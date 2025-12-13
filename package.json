@@ -1,4 +1,5 @@
 {
+  "homepage": "https://remcoslootmaekersucll.github.io/workshopDemoTerminal",
   "name": "serverdownworkshop",
   "version": "0.1.0",
   "license": "MIT",
@@ -9,10 +10,11 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
+    "build": "next build"
   },
   "dependencies": {
     "axios": "^1.13.2",
@@ -34,6 +36,7 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "gh-pages": "^6.3.0",
     "husky": "^8.0.1",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
