@@ -31,12 +31,16 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `configInit.sh
-config
-data
-bin
-sbin
-  `;
+  return `filename --- owner --- last modified by --- description
+systeem.log --- root --- root --- Systeemlogboek van de server
+fin_admin.xlsx --- admin --- admin --- Financiële administratie
+kernel32.dll --- system --- hacker42 --- Systeemkernelbestand
+backup_2025-12-01.zip --- root --- root --- Volledige systeembackup
+invoice_2025.pdf --- admin --- admin --- Factuur voor klant
+malware.exe --- unknown --- unknown --- Verdacht uitvoerbaar bestand
+readme.txt --- user --- user --- Gebruikersnotities
+config.sys --- system --- system --- Systeemconfiguratiebestand
+`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
